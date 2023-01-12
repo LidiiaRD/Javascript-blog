@@ -9,7 +9,7 @@
 }
 
 body {
-   background: #fff;
+   background: #ff9ff3;
    font-family: "Source Sans Pro", sans-serif;
    color: #444;
    font-weight: 300;
@@ -97,7 +97,19 @@ body {
 
 .post.active {
    display: block;
+   animation: 3s show ease;
 }
+
+@keyframes show {
+   from {
+      opacity: 0;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
 
 .post-author {
    font-style: italic;
@@ -111,5 +123,7 @@ body {
 .post-tags p {
    margin: 0 10px 0 0;
 }
+
+
 
 /*# sourceMappingURL=style.css.map */
